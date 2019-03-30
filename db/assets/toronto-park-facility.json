@@ -1,0 +1,3197 @@
+[
+  {
+    "name": "Academy Soccer Field",
+    "latitude": "43.72291073",
+    "longitude": "-79.31275798",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Agincourt Park",
+    "latitude": "43.78820463",
+    "longitude": "-79.27511945",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Alamosa Park",
+    "latitude": "43.78103379",
+    "longitude": "-79.36975701",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Albert Crosland Park",
+    "latitude": "43.64072753",
+    "longitude": "-79.44029076",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Albion Gardens Park",
+    "latitude": "43.7391084",
+    "longitude": "-79.55945623",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Alexmuir Park",
+    "latitude": "43.80923133",
+    "longitude": "-79.28317777",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Allan A. Lamport Stadium Park",
+    "latitude": "43.63871293",
+    "longitude": "-79.42338283",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Amesbury Park",
+    "latitude": "43.70613216",
+    "longitude": "-79.48361864",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Amos Waites Park",
+    "latitude": "43.613291",
+    "longitude": "-79.48851345",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Ancaster Park",
+    "latitude": "43.73337062",
+    "longitude": "-79.46570139",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Apted Park",
+    "latitude": "43.75537226",
+    "longitude": "-79.57756623",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Ashtonbee Reservoir Park",
+    "latitude": "43.73020808",
+    "longitude": "-79.29576812",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Audrelane Park",
+    "latitude": "43.82264514",
+    "longitude": "-79.28939932",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Balmoral Park",
+    "latitude": "43.74480881",
+    "longitude": "-79.45008185",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Balmy Beach Park",
+    "latitude": "43.67005553",
+    "longitude": "-79.28677748",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bamburgh Park",
+    "latitude": "43.81477516",
+    "longitude": "-79.3288597",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Banbury Park",
+    "latitude": "43.74271924",
+    "longitude": "-79.3700729",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Baycrest Park",
+    "latitude": "43.72699465",
+    "longitude": "-79.44589698",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bayview Village Park",
+    "latitude": "43.77321524",
+    "longitude": "-79.38779361",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Beaches Park",
+    "latitude": "43.66651077",
+    "longitude": "-79.29590723",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Beaumonde Heights Park",
+    "latitude": "43.73985786",
+    "longitude": "-79.57296373",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bellbury Park",
+    "latitude": "43.78370457",
+    "longitude": "-79.36157183",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bennington Heights Park",
+    "latitude": "43.69485968",
+    "longitude": "-79.36971248",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bert Robinson Park",
+    "latitude": "43.68778816",
+    "longitude": "-79.46153506",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Bestview Park",
+    "latitude": "43.80253263",
+    "longitude": "-79.38380895",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bethune Park",
+    "latitude": "43.74351245",
+    "longitude": "-79.21007174",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Beverly Glen Park",
+    "latitude": "43.79826806",
+    "longitude": "-79.32516048",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Bill Hancox Park",
+    "latitude": "43.7781019",
+    "longitude": "-79.13933759",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Birch Park",
+    "latitude": "43.59168211",
+    "longitude": "-79.52829394",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Birchmount Park",
+    "latitude": "43.69594182",
+    "longitude": "-79.26086987",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Birunthan Park",
+    "latitude": "43.82267836",
+    "longitude": "-79.22578127",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Bloordale Park South",
+    "latitude": "43.636722",
+    "longitude": "-79.570213",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bluehaven Park",
+    "latitude": "43.74523248",
+    "longitude": "-79.55573896",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Bond Park",
+    "latitude": "43.74636048",
+    "longitude": "-79.35144959",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Botany Hill Park",
+    "latitude": "43.77745412",
+    "longitude": "-79.21067072",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Bridletowne Park",
+    "latitude": "43.80028235",
+    "longitude": "-79.31317654",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Bridlewood Park",
+    "latitude": "43.78270993",
+    "longitude": "-79.31658642",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Broadlands Park",
+    "latitude": "43.74562668",
+    "longitude": "-79.32215425",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Brookwell Park",
+    "latitude": "43.74583075",
+    "longitude": "-79.49016206",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Buttonwood Park",
+    "latitude": "43.68198933",
+    "longitude": "-79.52108993",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Byng Park",
+    "latitude": "43.7005297",
+    "longitude": "-79.28435652",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Campbell Avenue Playground",
+    "latitude": "43.6635383",
+    "longitude": "-79.44849883",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Canmore Park",
+    "latitude": "43.79302713",
+    "longitude": "-79.17748388",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Carlton Park",
+    "latitude": "43.66650714",
+    "longitude": "-79.45567501",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Cartwright School Park",
+    "latitude": "43.721285",
+    "longitude": "-79.46382797",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Cassandra Park",
+    "latitude": "43.75471421",
+    "longitude": "-79.31857594",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Cedargrove Park",
+    "latitude": "43.74894969",
+    "longitude": "-79.23083321",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Cedarvale Park",
+    "latitude": "43.6922986",
+    "longitude": "-79.43075717",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Centennial Park - Etobicoke",
+    "latitude": "43.656034",
+    "longitude": "-79.588882",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Chalkfarm Park",
+    "latitude": "43.72371066",
+    "longitude": "-79.5158252",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Champlain Parkette",
+    "latitude": "43.7320819",
+    "longitude": "-79.44446576",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Charles G. Williams Park",
+    "latitude": "43.64748155",
+    "longitude": "-79.44347149",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Charlottetown Park",
+    "latitude": "43.78157754",
+    "longitude": "-79.14043447",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Chartwell Park",
+    "latitude": "43.80534463",
+    "longitude": "-79.2619735",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Chester Le Park",
+    "latitude": "43.79969603",
+    "longitude": "-79.33153777",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Christie Pits Park",
+    "latitude": "43.664659",
+    "longitude": "-79.420842",
+    "basketball": true,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Clairlea Park",
+    "latitude": "43.71424124",
+    "longitude": "-79.28788012",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Clanton Park",
+    "latitude": "43.74566117",
+    "longitude": "-79.43828948",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Cliffwood Park",
+    "latitude": "43.8083617",
+    "longitude": "-79.35528735",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Cloverdale Park",
+    "latitude": "43.63379346",
+    "longitude": "-79.54474882",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Clydesdale Park",
+    "latitude": "43.78316837",
+    "longitude": "-79.32962425",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Coleman Park",
+    "latitude": "43.68934368",
+    "longitude": "-79.30001523",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Conacher Park",
+    "latitude": "43.79524698",
+    "longitude": "-79.3982697",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Confederation Park",
+    "latitude": "43.77386372",
+    "longitude": "-79.2363503",
+    "basketball": true,
+    "volleyball": true,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Cornell Park",
+    "latitude": "43.75876798",
+    "longitude": "-79.21978925",
+    "basketball": true,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Coronation Park - York",
+    "latitude": "43.69093675",
+    "longitude": "-79.47996878",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Cosburn Park",
+    "latitude": "43.69289184",
+    "longitude": "-79.33047915",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Coxwell Avenue Parkette",
+    "latitude": "43.67783807",
+    "longitude": "-79.32092777",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Cresthaven Park",
+    "latitude": "43.79893346",
+    "longitude": "-79.36345766",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Cummer Park",
+    "latitude": "43.79958026",
+    "longitude": "-79.37200506",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Danforth Gardens Park",
+    "latitude": "43.70866719",
+    "longitude": "-79.26999438",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "David Crombie Park",
+    "latitude": "43.64853941",
+    "longitude": "-79.36810383",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Dean Park",
+    "latitude": "43.80111738",
+    "longitude": "-79.17087662",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Dentonia Park",
+    "latitude": "43.693628",
+    "longitude": "-79.293737",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Dixon Park",
+    "latitude": "43.69606252",
+    "longitude": "-79.55536922",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Dovercourt Park",
+    "latitude": "43.66515956",
+    "longitude": "-79.43373286",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Dufferin Grove Park",
+    "latitude": "43.65624245",
+    "longitude": "-79.43268597",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Dunlace Park",
+    "latitude": "43.76270043",
+    "longitude": "-79.36869629",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Earlscourt Park",
+    "latitude": "43.67356818",
+    "longitude": "-79.45170196",
+    "basketball": true,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "East Lynn Park",
+    "latitude": "43.68415167",
+    "longitude": "-79.31557247",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "East Mall Park",
+    "latitude": "43.64235264",
+    "longitude": "-79.55750702",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Edge Park",
+    "latitude": "43.7174278",
+    "longitude": "-79.29839723",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Edgeley Park",
+    "latitude": "43.76537272",
+    "longitude": "-79.51805547",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Edgewood Park",
+    "latitude": "43.76757308",
+    "longitude": "-79.26719188",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Edithvale Park",
+    "latitude": "43.77672773",
+    "longitude": "-79.42535647",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Eglinton Flats",
+    "latitude": "43.68608563",
+    "longitude": "-79.50172723",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Eglinton Park",
+    "latitude": "43.70740121",
+    "longitude": "-79.40552685",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Elizabeth Simcoe Park",
+    "latitude": "43.7393865",
+    "longitude": "-79.20495388",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Ellesmere Park",
+    "latitude": "43.76077934",
+    "longitude": "-79.29873235",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Ellesmere Reservoir Park",
+    "latitude": "43.7850412",
+    "longitude": "-79.20209987",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Elm Park - North York",
+    "latitude": "43.76983211",
+    "longitude": "-79.52541563",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Esther Lorrie Park",
+    "latitude": "43.72790304",
+    "longitude": "-79.57960755",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Fairbank Memorial Park",
+    "latitude": "43.6915952",
+    "longitude": "-79.4478255",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Fairglen Park",
+    "latitude": "43.78783633",
+    "longitude": "-79.32643396",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Fairhaven Park",
+    "latitude": "43.70177091",
+    "longitude": "-79.54513038",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Fairmount Park",
+    "latitude": "43.67583716",
+    "longitude": "-79.31592609",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Falstaff Park",
+    "latitude": "43.71668374",
+    "longitude": "-79.50362045",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Felstead Avenue Playground",
+    "latitude": "43.67931741",
+    "longitude": "-79.32964394",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Fenside Park",
+    "latitude": "43.76484123",
+    "longitude": "-79.32742261",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Finch - Humberline Sportsfields",
+    "latitude": "43.733411",
+    "longitude": "-79.616636",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Firgrove Park",
+    "latitude": "43.75057551",
+    "longitude": "-79.52179205",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Flagstaff Park",
+    "latitude": "43.72111996",
+    "longitude": "-79.59083238",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Flemingdon Park",
+    "latitude": "43.71377826",
+    "longitude": "-79.32969899",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Flemington Park",
+    "latitude": "43.72125375",
+    "longitude": "-79.44479078",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Fountainhead Park",
+    "latitude": "43.76222532",
+    "longitude": "-79.49791632",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Frankel-Lambert Park",
+    "latitude": "43.67210685",
+    "longitude": "-79.42465184",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Fred Hamilton Playground",
+    "latitude": "43.65290885",
+    "longitude": "-79.42043039",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Fred Young Park",
+    "latitude": "43.76690347",
+    "longitude": "-79.50556153",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Fundy Bay Park",
+    "latitude": "43.81082157",
+    "longitude": "-79.31847588",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "G. Ross Lord Park",
+    "latitude": "43.77706001",
+    "longitude": "-79.46527003",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "George Webster Park",
+    "latitude": "43.70124076",
+    "longitude": "-79.30117396",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Gihon Spring Park",
+    "latitude": "43.75447416",
+    "longitude": "-79.59482298",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Glamorgan Park",
+    "latitude": "43.77258975",
+    "longitude": "-79.28887711",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Glen Park",
+    "latitude": "43.65076816",
+    "longitude": "-79.55307571",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Glen Ravine Park",
+    "latitude": "43.73803071",
+    "longitude": "-79.25604797",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Glen Sheppard Park",
+    "latitude": "43.72756319",
+    "longitude": "-79.25033628",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Glendora Park",
+    "latitude": "43.76147328",
+    "longitude": "-79.4001222",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Godstone Park",
+    "latitude": "43.78360127",
+    "longitude": "-79.34769746",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Goldhawk Park",
+    "latitude": "43.82271778",
+    "longitude": "-79.27967749",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Goulding Park",
+    "latitude": "43.79081908",
+    "longitude": "-79.42259108",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Gracedale Park",
+    "latitude": "43.75188825",
+    "longitude": "-79.56236972",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Grandravine Park",
+    "latitude": "43.75187103",
+    "longitude": "-79.49151032",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Graydon Hall Park",
+    "latitude": "43.76281156",
+    "longitude": "-79.34268996",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Greenwood Park",
+    "latitude": "43.66855",
+    "longitude": "-79.328748",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Greystone Park",
+    "latitude": "43.72606867",
+    "longitude": "-79.25237482",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Gwendolen Park",
+    "latitude": "43.75126378",
+    "longitude": "-79.42018372",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Halbert Park",
+    "latitude": "43.72877269",
+    "longitude": "-79.23151286",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Havenbrook Park",
+    "latitude": "43.76765739",
+    "longitude": "-79.35682855",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Hawksbury Park",
+    "latitude": "43.77080276",
+    "longitude": "-79.38326031",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Hendon Park",
+    "latitude": "43.78142074",
+    "longitude": "-79.42094828",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Heron Park",
+    "latitude": "43.76922739",
+    "longitude": "-79.17750525",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Hidden Trail Park",
+    "latitude": "43.78409768",
+    "longitude": "-79.45865098",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "High Park",
+    "latitude": "43.64654",
+    "longitude": "-79.463497",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Highview Park",
+    "latitude": "43.7026208",
+    "longitude": "-79.25814236",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Hillcrest Park",
+    "latitude": "43.67592887",
+    "longitude": "-79.42472448",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Horseley Hill Park",
+    "latitude": "43.81072646",
+    "longitude": "-79.22973712",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Horton Park",
+    "latitude": "43.73630959",
+    "longitude": "-79.24300469",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Howard Talbot Park",
+    "latitude": "43.71021557",
+    "longitude": "-79.37374964",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Hullmar Park",
+    "latitude": "43.76488433",
+    "longitude": "-79.52561243",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Humber Sheppard Park",
+    "latitude": "43.733159",
+    "longitude": "-79.541213",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Humber Valley Park",
+    "latitude": "43.66460687",
+    "longitude": "-79.52482526",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Humberline Park",
+    "latitude": "43.7310721",
+    "longitude": "-79.61638024",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Humberside Grounds",
+    "latitude": "43.659315",
+    "longitude": "-79.470222",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Huntsmill Park",
+    "latitude": "43.80873926",
+    "longitude": "-79.32890983",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Indian Line Park",
+    "latitude": "43.72491474",
+    "longitude": "-79.62265359",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Iroquois Park",
+    "latitude": "43.80352313",
+    "longitude": "-79.26777597",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Irving Paisley Park",
+    "latitude": "43.74759348",
+    "longitude": "-79.38264127",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Irving W. Chapley Park",
+    "latitude": "43.76172223",
+    "longitude": "-79.45541708",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Jack Goodlad Park",
+    "latitude": "43.74239331",
+    "longitude": "-79.27011936",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Jeff Healey Park",
+    "latitude": "43.63050272",
+    "longitude": "-79.49564445",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Jim Mcpherson Park",
+    "latitude": "43.71232351",
+    "longitude": "-79.29642508",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Jimmie Simpson Park",
+    "latitude": "43.660057",
+    "longitude": "-79.345227",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Joel Weeks Park",
+    "latitude": "43.65948235",
+    "longitude": "-79.35298346",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "John Tabor Park",
+    "latitude": "43.80579132",
+    "longitude": "-79.20557479",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Jonathan Ashbridge Park",
+    "latitude": "43.66464268",
+    "longitude": "-79.32013169",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Joseph Bannon Park",
+    "latitude": "43.73235892",
+    "longitude": "-79.5349725",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Joyce Trimmer Park",
+    "latitude": "43.80555456",
+    "longitude": "-79.18975833",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "June Rowlands Park",
+    "latitude": "43.70063949",
+    "longitude": "-79.38872884",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Keele Reservoir",
+    "latitude": "43.77947253",
+    "longitude": "-79.49232134",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Keele-Mulock Parkette",
+    "latitude": "43.67155192",
+    "longitude": "-79.46707748",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Keelesdale Park",
+    "latitude": "43.68661771",
+    "longitude": "-79.48011899",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Kingsview Park",
+    "latitude": "43.69911321",
+    "longitude": "-79.55453744",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Kirkwood Park",
+    "latitude": "43.75555914",
+    "longitude": "-79.36187467",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Knob Hill Park",
+    "latitude": "43.74388909",
+    "longitude": "-79.24846736",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Knott Park",
+    "latitude": "43.79764923",
+    "longitude": "-79.29181721",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "L'Amoreaux North Park",
+    "latitude": "43.81224964",
+    "longitude": "-79.30774107",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "L'Amoreaux Sports Complex",
+    "latitude": "43.801660",
+    "longitude": "-79.304078",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Laburnham Park",
+    "latitude": "43.60007597",
+    "longitude": "-79.52822323",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lakeshore Boulevard Parklands",
+    "latitude": "43.63232437",
+    "longitude": "-79.43658375",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lakeshore Village Park",
+    "latitude": "43.60084377",
+    "longitude": "-79.51022875",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Lambton - Kingsway Park",
+    "latitude": "43.65752829",
+    "longitude": "-79.50800438",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lanyard Park",
+    "latitude": "43.74746162",
+    "longitude": "-79.54886783",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lawrence Park Ravine",
+    "latitude": "43.72044662",
+    "longitude": "-79.3988181",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Leaside Park",
+    "latitude": "43.70203158",
+    "longitude": "-79.35022813",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Len Braithwaite Park",
+    "latitude": "43.73954638",
+    "longitude": "-79.59553355",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Leonard Linton Park",
+    "latitude": "43.7133836",
+    "longitude": "-79.3542706",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Leslie Grove Park",
+    "latitude": "43.66310396",
+    "longitude": "-79.33375935",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Leslie Park",
+    "latitude": "43.78473691",
+    "longitude": "-79.36787667",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Lessard Park",
+    "latitude": "43.65384136",
+    "longitude": "-79.49018005",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lillian Park",
+    "latitude": "43.79763444",
+    "longitude": "-79.40813649",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lindylou Park",
+    "latitude": "43.75050625",
+    "longitude": "-79.54612405",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Linus Park",
+    "latitude": "43.78862225",
+    "longitude": "-79.35823591",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Lithuania Park",
+    "latitude": "43.65869299",
+    "longitude": "-79.46320025",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Littles Park",
+    "latitude": "43.81651668",
+    "longitude": "-79.20597381",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Lora Hill Park",
+    "latitude": "43.63827913",
+    "longitude": "-79.51502703",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Lytton Park",
+    "latitude": "43.7151341",
+    "longitude": "-79.41110823",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Macgregor Playground",
+    "latitude": "43.65310911",
+    "longitude": "-79.44230718",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Magwood Park",
+    "latitude": "43.65725208",
+    "longitude": "-79.49792309",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Main Sewage Treatment Playground",
+    "latitude": "43.66333013",
+    "longitude": "-79.31804504",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Major Abbas Ali Park",
+    "latitude": "43.80479208",
+    "longitude": "-79.2308957",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Malta Park",
+    "latitude": "43.66525475",
+    "longitude": "-79.47578329",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Malvern Park",
+    "latitude": "43.80913819",
+    "longitude": "-79.21737823",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Manchester Park",
+    "latitude": "43.62054338",
+    "longitude": "-79.49051584",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Manhattan Park",
+    "latitude": "43.75369303",
+    "longitude": "-79.29492204",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Manse Road Park",
+    "latitude": "43.7660761",
+    "longitude": "-79.17227981",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Maple Leaf Park",
+    "latitude": "43.71574816",
+    "longitude": "-79.49364926",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Marilyn Bell Park",
+    "latitude": "43.63071976",
+    "longitude": "-79.43037804",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Martingrove Gardens Park",
+    "latitude": "43.68911127",
+    "longitude": "-79.56353093",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Maryland Park",
+    "latitude": "43.69178954",
+    "longitude": "-79.2954032",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Maryvale Park",
+    "latitude": "43.7530262",
+    "longitude": "-79.30672952",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Masseygrove Park",
+    "latitude": "43.7344594",
+    "longitude": "-79.58830819",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Matty Eckler Playground",
+    "latitude": "43.66794638",
+    "longitude": "-79.33854054",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "McCormick Park",
+    "latitude": "43.647492",
+    "longitude": "-79.432833",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "McCowan District Park",
+    "latitude": "43.73363148",
+    "longitude": "-79.23791754",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "McDairmid Woods Park",
+    "latitude": "43.77980023",
+    "longitude": "-79.26781016",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "McGregor Park",
+    "latitude": "43.74724675",
+    "longitude": "-79.28076178",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Mcnicoll Park",
+    "latitude": "43.79855513",
+    "longitude": "-79.35348461",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Mel Lastman Square",
+    "latitude": "43.76752378",
+    "longitude": "-79.41373756",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Mill Valley Park",
+    "latitude": "43.64311364",
+    "longitude": "-79.58864262",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Millwood Park",
+    "latitude": "43.63170875",
+    "longitude": "-79.57863136",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Mimico Memorial Park",
+    "latitude": "43.60975831",
+    "longitude": "-79.49386615",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Mitchell Field Park",
+    "latitude": "43.77451019",
+    "longitude": "-79.40860938",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Moatfield Farm Park",
+    "latitude": "43.76406616",
+    "longitude": "-79.35880109",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Monarch Park",
+    "latitude": "43.678849",
+    "longitude": "-79.32627",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Moore Park - North York",
+    "latitude": "43.79152472",
+    "longitude": "-79.43554036",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Moorevale Park",
+    "latitude": "43.69347618",
+    "longitude": "-79.38246474",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Morningside Park",
+    "latitude": "43.77944401",
+    "longitude": "-79.19650665",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Moss Park",
+    "latitude": "43.65501197",
+    "longitude": "-79.37127535",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Muirlands Park",
+    "latitude": "43.82282057",
+    "longitude": "-79.26889631",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Murison Park",
+    "latitude": "43.79738376",
+    "longitude": "-79.20623993",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Neilson Park - Scarborough",
+    "latitude": "43.81348657",
+    "longitude": "-79.22435425",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Nesbitt Park",
+    "latitude": "43.69305786",
+    "longitude": "-79.36705731",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Noble Park",
+    "latitude": "43.67717542",
+    "longitude": "-79.50143578",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "North Agincourt Park",
+    "latitude": "43.79668916",
+    "longitude": "-79.27465196",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "North Bendale Park",
+    "latitude": "43.76965256",
+    "longitude": "-79.24499789",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "North Kipling Park",
+    "latitude": "43.75211261",
+    "longitude": "-79.58494924",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "North Park",
+    "latitude": "43.71377123",
+    "longitude": "-79.47515179",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Norwood Park",
+    "latitude": "43.68230922",
+    "longitude": "-79.30336606",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Oak Street Park",
+    "latitude": "43.66210371",
+    "longitude": "-79.35832771",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Oakcrest Parkette",
+    "latitude": "43.68347559",
+    "longitude": "-79.31166487",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Oakdale Park",
+    "latitude": "43.74804637",
+    "longitude": "-79.51350454",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Oakridge Park",
+    "latitude": "43.69235133",
+    "longitude": "-79.27898691",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Oates Park",
+    "latitude": "43.7043477",
+    "longitude": "-79.27442439",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Old Mill Site Park",
+    "latitude": "43.65080011",
+    "longitude": "-79.49043589",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Orchard Park",
+    "latitude": "43.66866883",
+    "longitude": "-79.31433941",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Oriole Park - North York",
+    "latitude": "43.78143619",
+    "longitude": "-79.35120579",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Oriole Park - Toronto",
+    "latitude": "43.69719119",
+    "longitude": "-79.40043637",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Ourland Park",
+    "latitude": "43.61549667",
+    "longitude": "-79.50889204",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Park Lawn Park",
+    "latitude": "43.6370094",
+    "longitude": "-79.49481925",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Parkway Forest Park",
+    "latitude": "43.77121473",
+    "longitude": "-79.34188434",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Parliament Square Park",
+    "latitude": "43.64995905",
+    "longitude": "-79.36296584",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Parma Park",
+    "latitude": "43.717811",
+    "longitude": "-79.30234665",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Pelmo Park",
+    "latitude": "43.71360366",
+    "longitude": "-79.51873203",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Perth Avenue Parkette",
+    "latitude": "43.65872406",
+    "longitude": "-79.45019578",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Phin Avenue Parkette",
+    "latitude": "43.67786094",
+    "longitude": "-79.33651432",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Pine Point Park",
+    "latitude": "43.71540123",
+    "longitude": "-79.54097075",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Port Royal Park",
+    "latitude": "43.81774143",
+    "longitude": "-79.28781719",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Prairie Drive Park",
+    "latitude": "43.69705805",
+    "longitude": "-79.28432047",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Pricefield Road Playground",
+    "latitude": "43.68143157",
+    "longitude": "-79.38895376",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Prince of Wales Park",
+    "latitude": "43.5987857",
+    "longitude": "-79.4989802",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Princess Anne Park",
+    "latitude": "43.67321172",
+    "longitude": "-79.5399421",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Queensway Park",
+    "latitude": "43.62678355",
+    "longitude": "-79.50691855",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Ramsden Park",
+    "latitude": "43.67641",
+    "longitude": "-79.389569",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Regent Park Athletic Grounds",
+    "latitude": "43.65867289",
+    "longitude": "-79.35970083",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Regents Park",
+    "latitude": "43.7067209",
+    "longitude": "-79.29145312",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Remberto Navia Sport Fields",
+    "latitude": "43.75832264",
+    "longitude": "-79.52820989",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Rennie Park",
+    "latitude": "43.643058",
+    "longitude": "-79.472549",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Richmond Park",
+    "latitude": "43.81242284",
+    "longitude": "-79.26363653",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Richview Park",
+    "latitude": "43.67711294",
+    "longitude": "-79.56175912",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Ritchie Avenue Parkette",
+    "latitude": "43.65379926",
+    "longitude": "-79.44918892",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Riverdale Park East",
+    "latitude": "43.66999498",
+    "longitude": "-79.35594026",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Rockford Park",
+    "latitude": "43.78639241",
+    "longitude": "-79.45417182",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Ron Watson Park",
+    "latitude": "43.78593683",
+    "longitude": "-79.29625053",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Rosebank Park",
+    "latitude": "43.79329128",
+    "longitude": "-79.23372785",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Rosedale Park",
+    "latitude": "43.68272452",
+    "longitude": "-79.37912942",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Rosethorn Park",
+    "latitude": "43.65838841",
+    "longitude": "-79.53932236",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Rotary Peace Park",
+    "latitude": "43.59389042",
+    "longitude": "-79.50591623",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Rouge Park - Rouge Beach Park ",
+    "latitude": "43.79369393",
+    "longitude": "-79.11806631",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Royal Crest Park",
+    "latitude": "43.75273767",
+    "longitude": "-79.60548413",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Roywood Park",
+    "latitude": "43.764716",
+    "longitude": "-79.320624",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Ruddington Park",
+    "latitude": "43.79223401",
+    "longitude": "-79.38944099",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Runnymede Park",
+    "latitude": "43.6682365",
+    "longitude": "-79.47874997",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "S.A.D.R.A. Park",
+    "latitude": "43.67557256",
+    "longitude": "-79.46238204",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Sackville Playground",
+    "latitude": "43.65455135",
+    "longitude": "-79.36086779",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Saddletree Park",
+    "latitude": "43.80484619",
+    "longitude": "-79.37763633",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Sandown Park",
+    "latitude": "43.70994657",
+    "longitude": "-79.25355483",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Sanwood Park",
+    "latitude": "43.81777545",
+    "longitude": "-79.31042386",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Scarboro Crescent Park",
+    "latitude": "43.70320362",
+    "longitude": "-79.24221971",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Scarborough Village Park",
+    "latitude": "43.74654424",
+    "longitude": "-79.21317839",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Scarlett Mills Park",
+    "latitude": "43.67566359",
+    "longitude": "-79.51158253",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Seasons Park",
+    "latitude": "43.83070193",
+    "longitude": "-79.23174737",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Seneca Hill Park",
+    "latitude": "43.79144997",
+    "longitude": "-79.35193019",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Sentinel Park",
+    "latitude": "43.75514571",
+    "longitude": "-79.49874603",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Seven Oaks Park",
+    "latitude": "43.78819505",
+    "longitude": "-79.21078818",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Shawnee Park",
+    "latitude": "43.79698858",
+    "longitude": "-79.33855008",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Silver Creek Park",
+    "latitude": "43.68264775",
+    "longitude": "-79.54359947",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Sir Adam Beck Park",
+    "latitude": "43.60206511",
+    "longitude": "-79.54774439",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Sir Winston Churchill Park",
+    "latitude": "43.68282611",
+    "longitude": "-79.40905891",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Skymark Park",
+    "latitude": "43.79453255",
+    "longitude": "-79.35607079",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Snider Parkette",
+    "latitude": "43.71647419",
+    "longitude": "-79.40116273",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Sorauren Avenue Park",
+    "latitude": "43.6486942",
+    "longitude": "-79.44347912",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Stanley Park",
+    "latitude": "43.74185404",
+    "longitude": "-79.51561636",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Stanley Park North - Toronto",
+    "latitude": "43.64307555",
+    "longitude": "-79.41004117",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Stanley Park South - Toronto",
+    "latitude": "43.64185386",
+    "longitude": "-79.40913303",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Stephen Leacock Park",
+    "latitude": "43.78716164",
+    "longitude": "-79.302686",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Strathburn Park",
+    "latitude": "43.72208701",
+    "longitude": "-79.53298586",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Summerlea Park",
+    "latitude": "43.73107613",
+    "longitude": "-79.55081825",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Sunnybrook Park",
+    "latitude": "43.724394",
+    "longitude": "-79.358582",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Sunnydale Acres Park",
+    "latitude": "43.72404271",
+    "longitude": "-79.57871854",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Sunnylea Park",
+    "latitude": "43.64150244",
+    "longitude": "-79.50182897",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Sweeney Park",
+    "latitude": "43.73615847",
+    "longitude": "-79.31621253",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Symington Avenue Playground",
+    "latitude": "43.66665073",
+    "longitude": "-79.45248304",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Tall Pines Park",
+    "latitude": "43.79849589",
+    "longitude": "-79.15149387",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Tam Heather Country Club Grounds",
+    "latitude": "43.79119052",
+    "longitude": "-79.19875466",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Telfer Park",
+    "latitude": "43.80756133",
+    "longitude": "-79.22630346",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Terraview Park",
+    "latitude": "43.76621785",
+    "longitude": "-79.31178477",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Terry Fox Park",
+    "latitude": "43.81438171",
+    "longitude": "-79.32021276",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Thomson Memorial Park",
+    "latitude": "43.7579199",
+    "longitude": "-79.25326761",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Three Valleys Park",
+    "latitude": "43.75054245",
+    "longitude": "-79.33964466",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Timberbank Park",
+    "latitude": "43.79378784",
+    "longitude": "-79.30864379",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Tom Riley Park",
+    "latitude": "43.64756333",
+    "longitude": "-79.52040954",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Topham Park",
+    "latitude": "43.709918",
+    "longitude": "-79.306521",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Toronto Island Park - Hanlan's Point",
+    "latitude": "43.62055426",
+    "longitude": "-79.39333086",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Tournament Park",
+    "latitude": "43.75147933",
+    "longitude": "-79.39989539",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Trace Manes Park",
+    "latitude": "43.70551558",
+    "longitude": "-79.36764861",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Trinity Bellwoods Park",
+    "latitude": "43.645515",
+    "longitude": "-79.413834",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Trudelle Street Park",
+    "latitude": "43.73942915",
+    "longitude": "-79.24227917",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Turnberry North Park",
+    "latitude": "43.67919958",
+    "longitude": "-79.46707455",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Underpass Park",
+    "latitude": "43.65579586",
+    "longitude": "-79.35481822",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Valleyfield Park",
+    "latitude": "43.69486386",
+    "longitude": "-79.53415919",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Vermont Square Park",
+    "latitude": "43.67076974",
+    "longitude": "-79.41558656",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Viewmount Park",
+    "latitude": "43.70697381",
+    "longitude": "-79.43765656",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Village Green Park",
+    "latitude": "43.73532654",
+    "longitude": "-79.56383719",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Vine Avenue Playground",
+    "latitude": "43.66693641",
+    "longitude": "-79.47069656",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Viola Desmond Park",
+    "latitude": "43.81286019",
+    "longitude": "-79.21871796",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Wadsworth Park",
+    "latitude": "43.67228522",
+    "longitude": "-79.45817036",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Wallace Emerson Park",
+    "latitude": "43.667341",
+    "longitude": "-79.43925",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Walter Saunders Memorial Park",
+    "latitude": "43.6996848",
+    "longitude": "-79.44797492",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Wanita Park",
+    "latitude": "43.77610205",
+    "longitude": "-79.15608099",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Wanless Park",
+    "latitude": "43.72887803",
+    "longitude": "-79.3922559",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Wedgewood Park - Etobicoke",
+    "latitude": "43.64441452",
+    "longitude": "-79.54772958",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Wedgewood Park - North York",
+    "latitude": "43.79046303",
+    "longitude": "-79.40652439",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Wellesley Park",
+    "latitude": "43.66954666",
+    "longitude": "-79.36240104",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Wellesworth Park",
+    "latitude": "43.65655901",
+    "longitude": "-79.5744968",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "West Deane Park",
+    "latitude": "43.66123597",
+    "longitude": "-79.55977996",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "West Lodge Park",
+    "latitude": "43.64604787",
+    "longitude": "-79.43818706",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "West Rouge Park",
+    "latitude": "43.79153308",
+    "longitude": "-79.12567067",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Westgrove Park",
+    "latitude": "43.68176605",
+    "longitude": "-79.56785509",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Westmount Park",
+    "latitude": "43.68724202",
+    "longitude": "-79.51897978",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Weston Lions Park",
+    "latitude": "43.69789026",
+    "longitude": "-79.51773465",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Westway Park",
+    "latitude": "43.687716",
+    "longitude": "-79.54171732",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "White Haven Park",
+    "latitude": "43.78641328",
+    "longitude": "-79.24996628",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Wickson Trail Park",
+    "latitude": "43.80462597",
+    "longitude": "-79.21525465",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Willowdale Park",
+    "latitude": "43.76602437",
+    "longitude": "-79.40786872",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Wishing Well Park",
+    "latitude": "43.76981329",
+    "longitude": "-79.31682071",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "Withrow Park and Clubhouse",
+    "latitude": "43.674952",
+    "longitude": "-79.347131",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": true
+  },
+  {
+    "name": "Woburn Park - North York",
+    "latitude": "43.72352202",
+    "longitude": "-79.42902946",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Woburn Park - Scarborough",
+    "latitude": "43.78142948",
+    "longitude": "-79.22785942",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Woodbine Beach Park",
+    "latitude": "43.66214932",
+    "longitude": "-79.30895561",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Woodbine Park",
+    "latitude": "43.66387937",
+    "longitude": "-79.31310326",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  },
+  {
+    "name": "Woodborough Park",
+    "latitude": "43.69684625",
+    "longitude": "-79.46989822",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Woolner Park",
+    "latitude": "43.67120648",
+    "longitude": "-79.49279437",
+    "basketball": true,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "Wychwood Barns Park",
+    "latitude": "43.67948542",
+    "longitude": "-79.42390968",
+    "basketball": false,
+    "volleyball": true,
+    "tennis": false,
+    "sportField": false
+  },
+  {
+    "name": "York Mills Valley Park",
+    "latitude": "43.73949468",
+    "longitude": "-79.40467458",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": true,
+    "sportField": false
+  },
+  {
+    "name": "York Stadium",
+    "latitude": "43.68050993",
+    "longitude": "-79.47975945",
+    "basketball": false,
+    "volleyball": false,
+    "tennis": false,
+    "sportField": true
+  }
+]
