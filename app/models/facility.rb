@@ -1,5 +1,5 @@
 class Facility < ApplicationRecord
-  has_many_and_belongs_to_many :sports
+  has_and_belongs_to_many :sports
   has_many_ :games
 
   validates :name, presence: true

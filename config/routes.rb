@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :users, only: [:show, :update, :destroy] do
+      resources :games, only: [:index, :create, :destroy]
+      resources :next_games, only: [:index]
+    end
+  end
+
+  post '/signup' => 'users#create'
+  post '/login' => 'sessions#create'
+  post '/logout' => 'sessions#destroy'
 end
