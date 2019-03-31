@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-03-31
+  start_time: 
+  facility: one
+  sport: one
+
+two:
+  date: 2019-03-31
+  start_time: 
+  facility: two
+  sport: two
