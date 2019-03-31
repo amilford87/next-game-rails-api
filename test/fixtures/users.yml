@@ -3,21 +3,11 @@
 one:
   username: MyString
   email: MyString
-  password_digest: MyString
+  password: MyString
   image: MyString
-  pref_basketball: false
-  pref_volleyball: false
-  pref_soccer: false
-  pref_tennis: false
-  pref_frisbee: false
 
 two:
   username: MyString
   email: MyString
-  password_digest: MyString
+  password: MyString
   image: MyString
-  pref_basketball: false
-  pref_volleyball: false
-  pref_soccer: false
-  pref_tennis: false
-  pref_frisbee: false
