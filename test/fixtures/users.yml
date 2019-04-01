@@ -3,11 +3,11 @@
 one:
   username: MyString
   email: MyString
-  password: MyString
   image: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
 
 two:
   username: MyString
   email: MyString
-  password: MyString
   image: MyString
+  password_digest: <%= BCrypt::Password.create('secret') %>
