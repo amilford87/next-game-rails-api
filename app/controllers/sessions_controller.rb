@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
 
+  # Methods not complete
   def create
     if user = User.authenticate_with_credentials(session_params[:username], session_params[:password])
       session[:user_id] = user.id

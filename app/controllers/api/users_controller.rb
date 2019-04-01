@@ -1,5 +1,6 @@
 class Api::UsersController < ApplicationController
 
+  # Methods not complete
   def show
     if user = :current_user
       user.prefs = user.sports

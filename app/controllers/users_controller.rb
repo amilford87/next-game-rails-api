@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+  # Methods not complete
   def create
     user = User.new(user_params)
     if user.save
