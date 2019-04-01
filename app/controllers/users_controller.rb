@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
     if user_params[:password] == user_params[:password_confirmation]
-      user.password_digest = BCrypt::Password.create(user_params[:password])
+      # user.password_digest = BCrypt::Password.create(user_params[:password])
     end
     if user.save
       session[:user_id] = user.id
