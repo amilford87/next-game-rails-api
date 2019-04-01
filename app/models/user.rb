@@ -5,7 +5,8 @@ class User < ApplicationRecord
   def self.authenticate_with_credentials(username, password)
     # byebug
     user = User.find_by(username: username)
-    if user 
+
+    if user && user.password == password
       user
     else
       nil

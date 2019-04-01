@@ -4,8 +4,9 @@ class SessionsController < ApplicationController
   def create
     if user = User.authenticate_with_credentials(session_params[:username], session_params[:password])
       session[:user_id] = user.id
-      json_response(user)
+      render json: user, status: 200
     else
+      render json: { message: 'incorrect credentials' }, status: 401
       # render json response error here
     end
   end
@@ -18,7 +19,7 @@ class SessionsController < ApplicationController
   private
 
   def session_params
-    params.permit(
+    params.require(:session).permit(
       :username,
       :password,
     )
