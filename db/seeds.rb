@@ -17,7 +17,7 @@ unless Rails.env.development?
     exit 0
 end
 
-puts "Re-creating Facilities"
+puts "Re-creating Facilities..."
 
 #Delete everything first
 Game.destroy_all
@@ -55,7 +55,7 @@ facility5 = Facility.create!({
     longitude: -79.3917,
 })
 
-puts "Re-creating Sports"
+puts "Re-creating Sports..."
 
 
 basketball = Sport.create!({
@@ -83,36 +83,63 @@ volleyball = Sport.create!({
     image: open_asset('pickupVolleyball.png')
 })
 
-# puts "Re-creating Users"
+puts "Joining Facilities and Sports..."
 
-# User.destroy_all
+facility1.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2)
+facility1.save
 
-# user1 = User.create!({
-#     username: "Test_User1",
-#     email: "test_user1@email.com"
-# })
+facility2.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3)
+facility2.save
 
-# user2 = User.create!({
-#     username: "Another_User",
-#     email: "another_user@email.com"
-# })
+facility3.sport_ids = (Sport.first.id + 4), (Sport.first.id + 3), Sport.first.id
+facility3.save
 
-# user3 = User.create!({
-#     username: "Frisbee_Guy",
-#     email: "frisbee_guy@email.com"
-# })
+facility4.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3), (Sport.first.id + 4)
+facility4.save
 
-# user4 = User.create!({
-#     username: "Sports_dude",
-#     email: "sports_dude@email.com"
-# })
+facility5.sport_ids = Sport.first.id, (Sport.first.id + 3), (Sport.first.id + 4)
+facility5.save
 
-# user5 = User.create!({
-#     username: "Volleyballer",
-#     email: "volleyballer@email.com"
-# })
+puts "Re-creating Users..."
 
-puts "Re-creating Games"
+User.destroy_all
+
+user1 = User.create!({
+    username: "Test_User1",
+    email: "test_user1@email.com",
+    password: 'password',
+    image: 'none'
+})
+
+user2 = User.create!({
+    username: "Another_User",
+    email: "another_user@email.com",
+    password: 'password',
+    image: 'none'
+})
+
+user3 = User.create!({
+    username: "Frisbee_Guy",
+    email: "frisbee_guy@email.com",
+    password: 'password',
+    image: 'none'
+})
+
+user4 = User.create!({
+    username: "Sports_dude",
+    email: "sports_dude@email.com",
+    password: 'password',
+    image: 'none'
+})
+
+user5 = User.create!({
+    username: "Volleyballer",
+    email: "volleyballer@email.com",
+    password: 'password',
+    image: 'none'
+})
+
+puts "Re-creating Games..."
 
 
 game1 = Game.create!({
