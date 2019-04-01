@@ -2,12 +2,10 @@ class UsersController < ApplicationController
 
   # Methods not complete
   def create
-    byebug
     user = User.new(user_params)
     if user_params[:password] == user_params[:password_confirmation]
       user.password_digest = BCrypt::Password.create(user_params[:password])
     end
-    puts "here: #{user}"
     if user.save
       session[:user_id] = user.id
       render :json => user

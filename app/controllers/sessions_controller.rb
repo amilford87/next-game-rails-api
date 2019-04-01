@@ -22,4 +22,5 @@ class SessionsController < ApplicationController
       :username,
       :password,
     )
+  end
 end
