@@ -105,36 +105,36 @@ puts "Re-creating Users..."
 User.destroy_all
 
 user1 = User.create!({
-    username: "Test_User1",
-    email: "test_user1@email.com",
+    username: "Test",
+    email: "test@email.com",
     password: 'password',
     image: 'none'
 })
 
 user2 = User.create!({
-    username: "Another_User",
-    email: "another_user@email.com",
+    username: "User2",
+    email: "user2@email.com",
     password: 'password',
     image: 'none'
 })
 
 user3 = User.create!({
-    username: "Frisbee_Guy",
-    email: "frisbee_guy@email.com",
+    username: "User3",
+    email: "user3@email.com",
     password: 'password',
     image: 'none'
 })
 
 user4 = User.create!({
-    username: "Sports_dude",
-    email: "sports_dude@email.com",
+    username: "User4",
+    email: "user4@email.com",
     password: 'password',
     image: 'none'
 })
 
 user5 = User.create!({
-    username: "Volleyballer",
-    email: "volleyballer@email.com",
+    username: "User5",
+    email: "user5@email.com",
     password: 'password',
     image: 'none'
 })
@@ -176,5 +176,40 @@ game5 = Game.create!({
     facility_id: (Facility.first.id + 4),
     sport_id: (Sport.first.id + 4)
 })
+
+puts "Joining Games and Users..."
+
+game1.user_ids = User.first.id, (User.first.id + 1), (User.first.id + 2)
+game1.save
+
+game2.user_ids = User.first.id, (User.first.id + 2), (User.first.id + 4)
+game2.save
+
+game3.user_ids = (User.first.id + 4), (User.first.id + 2)
+game3.save
+
+game4.user_ids = User.first.id, (User.first.id + 3)
+game4.save
+
+game5.user_ids = (User.first.id + 4), (User.first.id + 1), (User.first.id + 2)
+game5.save
+
+
+puts "Joining Sports and Users..."
+
+basketball.user_ids = User.first.id, (User.first.id + 1)
+basketball.save
+
+frisbee.user_ids = (User.first.id + 2), (User.first.id + 3)
+frisbee.save
+
+soccer.user_ids = User.first.id, (User.first.id + 3), (User.first.id + 2)
+soccer.save
+
+tennis.user_ids = (User.first.id + 1), (User.first.id + 3)
+tennis.save
+
+volleyball.user_ids = (User.first.id + 1), (User.first.id + 4)
+volleyball.save
 
 puts "done!"
