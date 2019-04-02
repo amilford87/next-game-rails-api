@@ -20,7 +20,7 @@ class Api::GamesController < ApplicationController
                         time: game.start_time.strftime("%I:%M %p"),
                         sport: @game_sport,
                         location: @game_facility_name,
-                        map: {lat: @game_facility_lat.to_f, lng: @game_facility_lng.to_f}
+                        latlng: {lat: @game_facility_lat.to_f, lng: @game_facility_lng.to_f}
                        }
       @user_current_games_data.push(@users_saved_games) 
       end
