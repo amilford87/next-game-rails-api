@@ -7,7 +7,6 @@ class SessionsController < ApplicationController
       render json: @user, status: 200
     else
       render json: { message: 'incorrect credentials' }, status: 401
-      # render json response error here
     end
   end
 
