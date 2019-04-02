@@ -67,6 +67,7 @@ class Api::NextGamesController < ApplicationController
 
     next_games = existing_games.concat new_games
     applyGameWeight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
+    next_games = next_games.slice(0, 5)
     render json: next_games, status: 200
   end
 
