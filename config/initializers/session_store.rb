@@ -1,1 +1,1 @@
-Rails.application.config.session_store :cookie_store, key: '_my_app_name_session', domain: 'mysite.com'
+Rails.application.config.session_store :cookie_store, key: '_my_app_name_session'

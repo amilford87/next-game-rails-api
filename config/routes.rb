@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/api/users/:user_id/games' => 'api/games#index'
   post '/signup' => 'users#create'
+  get '/session' => 'users#show'
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
 end
