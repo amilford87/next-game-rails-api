@@ -15,17 +15,17 @@ class Api::NextGamesController < ApplicationController
       games.each do |g|
         existing_game = {
           type: 'active',
-          date: g.date,
+          date: g.date.strftime("%A %d of %B %Y"),
           image: g.sport.image,
           location: {
             lat: g.facility.latitude,
-            lng: g.facility.longitude,
-            dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [g.facility.latitude.to_f, g.facility.longitude.to_f]) * 1.60934).round(2)
+            lng: g.facility.longitude
           },
+          dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [g.facility.latitude.to_f, g.facility.longitude.to_f]) * 1.60934).round(2),
           facility: g.facility.name,
           other_players: g.users.ids,
           sport: g.sport.name,
-          time: g.start_time,
+          time: g.start_time.strftime("%I:%M %p")
         }
         existing_games.push(existing_game)
       end
@@ -43,17 +43,17 @@ class Api::NextGamesController < ApplicationController
           image: sport.image,
           location: {
             lat: f.latitude,
-            lng: f.longitude,
-            dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [f.latitude.to_f, f.longitude.to_f]) * 1.60934).round(2)
+            lng: f.longitude
           },
+          dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [f.latitude.to_f, f.longitude.to_f]) * 1.60934).round(2),
           facility: f.name,
-          other_players: 0,
+          other_players: [],
           sport: sport.name,
           time: "USER PREF HERE"
         }
         empty_games[sport.name].push(new_game)
       end
-      empty_games[sport.name].sort! { |x,y| x[:location][:dist] <=> y[:location][:dist]}
+      empty_games[sport.name].sort! { |x,y| x[:dist] <=> y[:dist]}
       if empty_games[sport.name].count > 2
         empty_games[sport.name] = empty_games[sport.name].slice(0,2)
       end
@@ -66,12 +66,22 @@ class Api::NextGamesController < ApplicationController
     end
 
     next_games = existing_games.concat new_games
+    applyGameWeight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
     render json: next_games, status: 200
   end
 
   private
 
-  def get_empty_games(user, current_location)
-
+  def applyGameWeight(games)
+    games.each do |g|
+      # Distance
+      distance_weight = ((-0.75 * g[:dist]) + 5)
+      if distance_weight < 0 then distance_weight = 0 end
+      # Players
+      player_weight = g[:other_players].count
+      if player_weight > 5 then player_weight = 5 end
+      g[:weighted_score] = (distance_weight + player_weight).round(3)
+    end
+    games
   end
 end
