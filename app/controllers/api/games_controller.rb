@@ -4,11 +4,7 @@ class Api::GamesController < ApplicationController
   def index
     if @user = User.first
       @current_games = @user.games
-      testing = @current_games.each do |game|
-        game.id 
-      end 
-
-      render json: testing, status: 200
+      render json: @current_games, status: 200
     else
       render json: { message: 'incorrect credentials' }, status: 401
     end
