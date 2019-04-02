@@ -76,11 +76,12 @@ class Api::NextGamesController < ApplicationController
   def applyGameWeight(games)
     games.each do |g|
       # Distance
-      distance_weight = ((-0.75 * g[:dist]) + 5)
+      distance_weight = (2.5 * Math.tanh(2.5 - (1.4 * Math.sqrt(g[:dist]))) + 2.5) # ((-0.75 * g[:dist]) + 5)
       if distance_weight < 0 then distance_weight = 0 end
+      # y=2.5 * tanh(2.5-1.3 * sqrt{x})+2.5
       # Players
-      player_weight = g[:other_players].count
-      if player_weight > 5 then player_weight = 5 end
+      player_weight = 1.3 * g[:other_players].count
+      if player_weight > 7.5 then player_weight = 7.5 end
       g[:weighted_score] = (distance_weight + player_weight).round(3)
     end
     games
