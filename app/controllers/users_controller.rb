@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   # Methods not complete
   def create
+    # byebug
     user = User.new(user_params)
     if user_params[:password] == user_params[:password_confirmation]
 
@@ -22,7 +23,7 @@ class UsersController < ApplicationController
       :username,
       :email,
       :password,
-      :password_confirmation
+      # :password_confirmation
     )
   end
 end
