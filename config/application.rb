@@ -33,15 +33,13 @@ module NextGameRailsApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-  end
-end
 
-module YourApp
-  class Application < Rails::Application
+    config.middleware.use ActionDispatch::Cookies
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_namespace_key'
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3001'
+        origins 'http://localhost:3002'
         resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options], credentials: true
       end
     end
