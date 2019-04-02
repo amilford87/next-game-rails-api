@@ -2,11 +2,11 @@ class Api::GamesController < ApplicationController
 
   # Methods not complete
   def index
-    if user = :current_user
-      current_games = user.games
-      json_response(current_games)
+    if @user = User.first
+      @current_games = @user.games
+      render json: @current_games, status: 200
     else
-      # handle error
+      render json: { message: 'incorrect credentials' }, status: 401
     end
   end
 
@@ -40,4 +40,5 @@ class Api::GamesController < ApplicationController
       :facility_id,
       :sport_id
     )
+  end
 end
