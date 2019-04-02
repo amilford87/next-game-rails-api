@@ -64,6 +64,9 @@ class Api::NextGamesController < ApplicationController
         new_games.push(eg)
       end
     end
+
+    next_games = existing_games.concat new_games
+    render json: next_games, status: 200
   end
 
   private
