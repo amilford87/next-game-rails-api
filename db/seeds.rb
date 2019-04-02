@@ -60,27 +60,27 @@ puts "Re-creating Sports..."
 
 basketball = Sport.create!({
     name: "Basketball",
-    image: open_asset('pickupBasketball.jpg')
+    image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupBasketball.jpg?raw=true'
 })
 
 frisbee = Sport.create!({
     name: "Frisbee",
-    image: open_asset('pickupFrisbee.jpeg')
+    image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupFrisbee.jpeg?raw=true'
 })
 
 soccer = Sport.create!({
     name: "Soccer",
-    image: open_asset('pickupSoccer.jpg')
+    image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupSoccer.jpg?raw=true'
 })
 
 tennis = Sport.create!({
     name: "Tennis",
-    image: open_asset('pickupTennis.jpg')
+    image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupTennis.jpg?raw=true'
 })
 
 volleyball = Sport.create!({
     name: "Volleyball",
-    image: open_asset('pickupVolleyball.png')
+    image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupVolleyball.png?raw=true'
 })
 
 puts "Joining Facilities and Sports..."
