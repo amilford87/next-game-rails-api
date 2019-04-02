@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
 
   get '/api/users/:user_id/games' => 'api/games#index'
+  get '/api/users/:user_id/next_games' => 'api/next_games#index'
   post '/signup' => 'users#create'
   get '/session' => 'users#show'
   post '/login' => 'sessions#create'
