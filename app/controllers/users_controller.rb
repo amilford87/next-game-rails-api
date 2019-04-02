@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   # Methods not complete
   def create
     user = User.new(user_params)
+    byebug
     if user_params[:password] == user_params[:password_confirmation]
       # user.password_digest = BCrypt::Password.create(user_params[:password])
     end
