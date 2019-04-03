@@ -144,37 +144,37 @@ puts "Re-creating User Time Preferences..."
 Timepref.destroy_all
 
 timepref1 = user1.timeprefs.create!({
-    week_day: 0,
-    start_time: '16:00',
+    week_day: 'Monday',
+    start_time: '10:00',
     end_time: '20:00'
 })
 
 timepref2 = user1.timeprefs.create!({
-    week_day: 2,
-    start_time: '12:00',
-    end_time: '16:00'
+    week_day: 'Wednesday',
+    start_time: '8:00',
+    end_time: '10:00'
 })
 
 timepref3 = user1.timeprefs.create!({
-    week_day: 6,
+    week_day: 'Sunday',
     start_time: '9:00',
     end_time: '16:00'
 })
 
 timepref4 = user3.timeprefs.create!({
-    week_day: 2,
+    week_day: 'Tuesday',
     start_time: '10:00',
     end_time: '20:00'
 })
 
 timepref5 = user3.timeprefs.create!({
-    week_day: 4,
+    week_day: 'Thursday',
     start_time: '12:00',
     end_time: '16:00'
 })
 
 timepref6 = user3.timeprefs.create!({
-    week_day: 6,
+    week_day: 'Saturday',
     start_time: '9:00',
     end_time: '20:00'
 })

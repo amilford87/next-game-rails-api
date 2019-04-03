@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_04_03_201739) do
   end
 
   create_table "timeprefs", force: :cascade do |t|
-    t.integer "week_day"
+    t.string "week_day"
     t.time "start_time"
     t.time "end_time"
     t.bigint "user_id"
