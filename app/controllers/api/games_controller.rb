@@ -2,7 +2,8 @@ class Api::GamesController < ApplicationController
 
   # Methods not complete
   def index
-    if @user = User.first
+    byebug
+    if @user = User.find(current_user.id)
       @current_games = @user.games
       @user_current_games_data = []
       @user.games.each do |game|
