@@ -18,8 +18,8 @@ class Api::NextGamesController < ApplicationController
           date: g.date.strftime("%A %d of %B %Y"),
           image: g.sport.image,
           location: {
-            lat: g.facility.latitude,
-            lng: g.facility.longitude
+            lat: g.facility.latitude.to_f,
+            lng: g.facility.longitude.to_f
           },
           dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [g.facility.latitude.to_f, g.facility.longitude.to_f]) * 1.60934).round(2),
           facility: g.facility.name,
@@ -42,8 +42,8 @@ class Api::NextGamesController < ApplicationController
           date: 'USER PREF HERE',
           image: sport.image,
           location: {
-            lat: f.latitude,
-            lng: f.longitude
+            lat: f.latitude.to_f,
+            lng: f.longitude.to_f
           },
           dist: (Geocoder::Calculations.distance_between([current_location[:location][:lat], current_location[:location][:lng]], [f.latitude.to_f, f.longitude.to_f]) * 1.60934).round(2),
           facility: f.name,
