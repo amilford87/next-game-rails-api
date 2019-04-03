@@ -139,6 +139,47 @@ user5 = User.create!({
     image: 'none'
 })
 
+puts "Re-creating User Time Preferences..."
+
+Timepref.destroy_all
+
+timepref1 = user1.timeprefs.create!({
+    week_day: 0,
+    start_time: '16:00',
+    end_time: '20:00'
+})
+
+timepref2 = user1.timeprefs.create!({
+    week_day: 2,
+    start_time: '12:00',
+    end_time: '16:00'
+})
+
+timepref3 = user1.timeprefs.create!({
+    week_day: 6,
+    start_time: '9:00',
+    end_time: '16:00'
+})
+
+timepref4 = user3.timeprefs.create!({
+    week_day: 2,
+    start_time: '10:00',
+    end_time: '20:00'
+})
+
+timepref5 = user3.timeprefs.create!({
+    week_day: 4,
+    start_time: '12:00',
+    end_time: '16:00'
+})
+
+timepref6 = user3.timeprefs.create!({
+    week_day: 6,
+    start_time: '9:00',
+    end_time: '20:00'
+})
+
+
 puts "Re-creating Games..."
 
 

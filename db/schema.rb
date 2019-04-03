@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_31_181907) do
+ActiveRecord::Schema.define(version: 2019_04_03_201739) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,16 @@ ActiveRecord::Schema.define(version: 2019_03_31_181907) do
     t.bigint "sport_id", null: false
   end
 
+  create_table "timeprefs", force: :cascade do |t|
+    t.integer "week_day"
+    t.time "start_time"
+    t.time "end_time"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_timeprefs_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
@@ -67,4 +77,5 @@ ActiveRecord::Schema.define(version: 2019_03_31_181907) do
 
   add_foreign_key "games", "facilities"
   add_foreign_key "games", "sports"
+  add_foreign_key "timeprefs", "users"
 end
