@@ -8,9 +8,9 @@
 
 puts "Seeding Data..."
 
-def open_asset(file_name)
-    File.open(Rails.root.join('db', 'assets', 'sport-image', file_name))
-end
+# def open_asset(file_name)
+#     File.open(Rails.root.join('db', 'assets', file_name))
+# end
 
 unless Rails.env.development?
     puts "Development seeds only (for now)!"
@@ -24,36 +24,35 @@ Game.destroy_all
 Facility.destroy_all
 Sport.destroy_all
 
-#make new seed users
-facility1 = Facility.create!({
-    name: "Christie Pits Park",
-    latitude: 43.6646,
-    longitude: -79.4207,
-})
+# facility1 = Facility.create!({
+#     name: "Christie Pits Park",
+#     latitude: 43.6646,
+#     longitude: -79.4207,
+# })
 
-facility2 = Facility.create!({
-    name: "Dovercourt Park",
-    latitude: 43.6658,
-    longitude: -79.4338,
-})
+# facility2 = Facility.create!({
+#     name: "Dovercourt Park",
+#     latitude: 43.6658,
+#     longitude: -79.4338,
+# })
 
-facility3 = Facility.create!({
-    name: "Grange Park",
-    latitude: 43.6537,
-    longitude: -79.3930,
-})
+# facility3 = Facility.create!({
+#     name: "Grange Park",
+#     latitude: 43.6537,
+#     longitude: -79.3930,
+# })
 
-facility4 = Facility.create!({
-    name: "Inukshuk Park",
-    latitude: 43.6324,
-    longitude: -79.4095,
-})
+# facility4 = Facility.create!({
+#     name: "Inukshuk Park",
+#     latitude: 43.6324,
+#     longitude: -79.4095,
+# })
 
-facility5 = Facility.create!({
-    name: "Village of Yorkville Park",
-    latitude: 43.6700,
-    longitude: -79.3917,
-})
+# facility5 = Facility.create!({
+#     name: "Village of Yorkville Park",
+#     latitude: 43.6700,
+#     longitude: -79.3917,
+# })
 
 puts "Re-creating Sports..."
 
@@ -83,22 +82,48 @@ volleyball = Sport.create!({
     image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupVolleyball.png?raw=true'
 })
 
-puts "Joining Facilities and Sports..."
+#make new seed facilities
+facilities = JSON.parse(File.read(Rails.root.join('db', 'assets', 'toronto-park-facility.json')), :symbolize_names => true)
+facilities.each do |f|
+    current_facility = Facility.create!({
+        name: f[:name],
+        latitude: f[:latitude].to_f,
+        longitude: f[:longitude].to_f
+    })
+    if f[:basketball]
+        current_facility.sport_ids = 1
+        current_facility.save
+    end
+    if f[:volleyball]
+        current_facility.sport_ids = 5
+        current_facility.save
+    end
+    if f[:tennis]
+        current_facility.sport_ids = 4
+        current_facility.save
+    end
+    if f[:sportField]
+        current_facility.sport_ids = 2, 3
+        current_facility.save
+    end
+end
 
-facility1.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2)
-facility1.save
+# puts "Joining Facilities and Sports..."
 
-facility2.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3)
-facility2.save
+# facility1.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2)
+# facility1.save
 
-facility3.sport_ids = (Sport.first.id + 4), (Sport.first.id + 3), Sport.first.id
-facility3.save
+# facility2.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3)
+# facility2.save
 
-facility4.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3), (Sport.first.id + 4)
-facility4.save
+# facility3.sport_ids = (Sport.first.id + 4), (Sport.first.id + 3), Sport.first.id
+# facility3.save
 
-facility5.sport_ids = Sport.first.id, (Sport.first.id + 3), (Sport.first.id + 4)
-facility5.save
+# facility4.sport_ids = Sport.first.id, (Sport.first.id + 1), (Sport.first.id + 2), (Sport.first.id + 3), (Sport.first.id + 4)
+# facility4.save
+
+# facility5.sport_ids = Sport.first.id, (Sport.first.id + 3), (Sport.first.id + 4)
+# facility5.save
 
 puts "Re-creating Users..."
 
