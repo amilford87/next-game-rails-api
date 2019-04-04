@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :games, only: [:index, :create, :destroy]
       resources :next_games, only: [:index]
       get '/preferences' => 'preferences#show'
-      post '/preferences' => 'preferences#update'
+      put '/preferences' => 'preferences#update'
     end
   end
 

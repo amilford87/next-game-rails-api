@@ -5,7 +5,7 @@ class Api::PreferencesController < ApplicationController
       user_sports = @user.sports
       sport_prefs = []
       user_sports.each do |s|
-        sport_prefs.push({ :value => s.name.downcase, :label => s.name })
+        sport_prefs.push(s.name)
       end
       times = @user.timeprefs
       time_prefs = {}
@@ -30,7 +30,16 @@ class Api::PreferencesController < ApplicationController
   end
 
   def update
-    @user = User.find(1)
+    if @user = User.find(current_user.id)
+      user_sports = @user.sports
 
+    end
   end
+
+  private
+
+
 end
+
+
+#<ActionController::Parameters {"user"=>{"sports"=>["basketball", "volleyball", "tennis"], "selectedDays"=>{"monday"=>false, "tuesday"=>true, "wednesday"=>false, "thursday"=>false, "friday"=>true, "saturday"=>false, "sunday"=>false, "tuesdayStart"=>"11:00", "fridayEnd"=>"23:00"}}, "controller"=>"api/preferences", "action"=>"update", "user_id"=>"1", "preference"=>{"user"=>{"sports"=>["basketball", "volleyball", "tennis"], "selectedDays"=>{"monday"=>false, "tuesday"=>true, "wednesday"=>false, "thursday"=>false, "friday"=>true, "saturday"=>false, "sunday"=>false, "tuesdayStart"=>"11:00", "fridayEnd"=>"23:00"}}}} permitted: false>
