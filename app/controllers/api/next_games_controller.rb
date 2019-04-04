@@ -4,7 +4,7 @@ class Api::NextGamesController < ApplicationController
 
   # Methods not complete
   def index
-    @user = User.first
+    @user = User.find(current_user.id)
     @current_location = {location: {lat: 43.64434, lng: -79.401984}}
     @sports = @user.sports
     @timeprefs = @user.timeprefs
