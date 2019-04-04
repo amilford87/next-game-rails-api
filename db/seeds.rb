@@ -168,41 +168,76 @@ puts "Re-creating User Time Preferences..."
 
 Timepref.destroy_all
 
-timepref1 = user1.timeprefs.create!({
-    week_day: 'Monday',
-    start_time: '10:00',
-    end_time: '20:00'
-})
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
-timepref2 = user1.timeprefs.create!({
-    week_day: 'Wednesday',
-    start_time: '8:00',
-    end_time: '10:00'
-})
+User.all.each do |u|
+    days.each do |d|
+        u.timeprefs.create!({
+            week_day: d,
+            active: false
+        })
+    end
+end
 
-timepref3 = user1.timeprefs.create!({
-    week_day: 'Sunday',
-    start_time: '9:00',
-    end_time: '16:00'
-})
+timepref1 = user1.timeprefs.find_by(week_day: 'Monday')
+timepref1.start_time = '10:00'
+timepref1.end_time = '20:00'
+timepref1.active = true
+timepref1.save
 
-timepref4 = user3.timeprefs.create!({
-    week_day: 'Tuesday',
-    start_time: '10:00',
-    end_time: '20:00'
-})
+timepref2 = user1.timeprefs.find_by(week_day: 'Wednesday')
+timepref2.start_time = '8:00'
+timepref2.end_time = '10:00'
+timepref2.active = true
+timepref2.save
 
-timepref5 = user3.timeprefs.create!({
-    week_day: 'Thursday',
-    start_time: '12:00',
-    end_time: '16:00'
-})
+timepref3 = user1.timeprefs.find_by(week_day: 'Sunday')
+timepref3.start_time = '9:00'
+timepref3.end_time = '16:00'
+timepref3.active = true
+timepref3.save
 
-timepref6 = user3.timeprefs.create!({
-    week_day: 'Saturday',
-    start_time: '9:00',
-    end_time: '20:00'
-})
+timepref4 = user3.timeprefs.find_by(week_day: 'Tuesday')
+timepref4.start_time = '10:00'
+timepref4.end_time = '20:00'
+timepref4.active = true
+timepref4.save
+
+timepref5 = user3.timeprefs.find_by(week_day: 'Thursday')
+timepref5.start_time = '12:00'
+timepref5.end_time = '16:00'
+timepref5.active = true
+timepref5.save
+
+timepref6 = user3.timeprefs.find_by(week_day: 'Saturday')
+timepref6.start_time = '9:00'
+timepref6.end_time = '20:00'
+timepref6.active = true
+timepref6.save
+
+# timepref3 = user1.timeprefs.create!({
+#     week_day: 'Sunday',
+#     start_time: '9:00',
+#     end_time: '16:00'
+# })
+
+# timepref4 = user3.timeprefs.create!({
+#     week_day: 'Tuesday',
+#     start_time: '10:00',
+#     end_time: '20:00'
+# })
+
+# timepref5 = user3.timeprefs.create!({
+#     week_day: 'Thursday',
+#     start_time: '12:00',
+#     end_time: '16:00'
+# })
+
+# timepref6 = user3.timeprefs.create!({
+#     week_day: 'Saturday',
+#     start_time: '9:00',
+#     end_time: '20:00'
+# })
 
 
 puts "Re-creating Games..."
