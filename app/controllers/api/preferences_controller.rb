@@ -30,6 +30,7 @@ class Api::PreferencesController < ApplicationController
   end
 
   def update
+    @user = User.find(1)
 
   end
 end

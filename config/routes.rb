@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     resources :users, only: [:show, :update, :destroy] do
       resources :games, only: [:index, :create, :destroy]
       resources :next_games, only: [:index]
-      resources :preferences, only: [:show, :update]
+      get '/preferences' => 'preferences#show'
+      post '/preferences' => 'preferences#update'
     end
   end
 
