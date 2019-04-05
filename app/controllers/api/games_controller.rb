@@ -55,7 +55,6 @@ class Api::GamesController < ApplicationController
       game = Game.find(params[:game_id])
       user = User.find(current_user.id)
       game.users.push(user)
-      byebug
     end
 
 
