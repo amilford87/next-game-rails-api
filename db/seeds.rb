@@ -344,4 +344,11 @@ users = User.all
     count = count + 1
 end
 
+game_one = Game.find(23)
+game_two = Game.find(57)
+game_three = Game.find(13)
+
+user1.games = game_one, game_two, game_three
+user1.save
+
 puts "done!"
