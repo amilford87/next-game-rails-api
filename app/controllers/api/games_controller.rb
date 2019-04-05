@@ -1,5 +1,5 @@
 class Api::GamesController < ApplicationController
-
+  
   # Methods not complete
   def index
     if @user = User.find(current_user.id)
@@ -40,6 +40,25 @@ class Api::GamesController < ApplicationController
     else
       # handle error
     end
+  end
+
+  def create
+  
+    if params[:type] == "new" 
+      game = Game.create!({
+        date: params[:date],
+        start_time: params[:start_time],
+        facility_id: params[:facility_id],
+        sport_id: params[:sport_id]
+      })
+    else
+      game = Game.find(params[:game_id])
+      user = User.find(current_user.id)
+      game.users.push(user)
+      byebug
+    end
+
+
   end
 
   def destroy
