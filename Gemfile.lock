@@ -51,6 +51,8 @@ GEM
     concurrent-ruby (1.1.5)
     crass (1.0.4)
     erubi (1.8.0)
+    faker (1.9.3)
+      i18n (>= 0.7)
     ffi (1.10.0)
     geocoder (1.5.1)
     globalid (0.4.2)
@@ -139,6 +141,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.12)
   bootsnap (>= 1.1.0)
   byebug
+  faker
   geocoder
   listen (>= 3.0.5, < 3.2)
   nokogiri

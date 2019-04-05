@@ -91,20 +91,16 @@ facilities.each do |f|
         longitude: f[:longitude].to_f
     })
     if f[:basketball]
-        current_facility.sport_ids = 1
-        current_facility.save
+        current_facility.sports << Sport.find(1)
     end
     if f[:volleyball]
-        current_facility.sport_ids = 5
-        current_facility.save
+        current_facility.sports << Sport.find(5)
     end
     if f[:tennis]
-        current_facility.sport_ids = 4
-        current_facility.save
+        current_facility.sports << Sport.find(4)
     end
     if f[:sportField]
-        current_facility.sport_ids = 2, 3
-        current_facility.save
+        current_facility.sports << Sport.find(2, 3)
     end
 end
 
@@ -164,6 +160,15 @@ user5 = User.create!({
     image: 'none'
 })
 
+100.times do
+    User.create!({
+        username: Faker::Internet.username,
+        email: Faker::Internet.email,
+        password: 'password',
+        image: 'none'
+    })
+end
+
 puts "Re-creating User Time Preferences..."
 
 Timepref.destroy_all
@@ -178,6 +183,7 @@ User.all.each do |u|
         })
     end
 end
+
 
 timepref1 = user1.timeprefs.find_by(week_day: 'Monday')
 timepref1.start_time = '10:00'
@@ -214,6 +220,8 @@ timepref6.start_time = '9:00'
 timepref6.end_time = '20:00'
 timepref6.active = true
 timepref6.save
+
+
 
 # timepref3 = user1.timeprefs.create!({
 #     week_day: 'Sunday',
@@ -278,39 +286,63 @@ game5 = Game.create!({
     sport_id: (Sport.first.id + 4)
 })
 
-puts "Joining Games and Users..."
+all_Facilities = Facility.all.to_a
+d = Date.today
+dates = [d, Date.tomorrow, (d+2), (d+3), (d+4), (d+5), (d+6)]
+minute = ['00', '30']
 
-game1.user_ids = User.first.id, (User.first.id + 1), (User.first.id + 2)
-game1.save
 
-game2.user_ids = User.first.id, (User.first.id + 2), (User.first.id + 4)
-game2.save
-
-game3.user_ids = (User.first.id + 4), (User.first.id + 2)
-game3.save
-
-game4.user_ids = User.first.id, (User.first.id + 3)
-game4.save
-
-game5.user_ids = (User.first.id + 4), (User.first.id + 1), (User.first.id + 2)
-game5.save
-
+100.times do
+    hour = rand(06..22).to_s
+    date_sample = dates.sample.to_s 
+    
+    temp_game = Game.new
+    temp_game.date = date_sample
+    temp_game.start_time = hour + ":" + minute.sample
+    temp_game.facility_id = all_Facilities.sample.id
+    temp_game.sport_id = Facility.find(temp_game.facility_id).sports.sample.id
+    
+    temp_game.save
+end
 
 puts "Joining Sports and Users..."
 
-basketball.user_ids = User.first.id, (User.first.id + 1)
-basketball.save
+basketball.users << User.find((1..60).to_a)
 
-frisbee.user_ids = (User.first.id + 2), (User.first.id + 3)
-frisbee.save
+frisbee.users << User.find((50..80).to_a)
 
-soccer.user_ids = User.first.id, (User.first.id + 3), (User.first.id + 2)
-soccer.save
+soccer.users << User.find((1..80).to_a)
 
-tennis.user_ids = (User.first.id + 1), (User.first.id + 3)
-tennis.save
+tennis.users << User.find((70..100).to_a)
 
-volleyball.user_ids = (User.first.id + 1), (User.first.id + 4)
-volleyball.save
+volleyball.users << User.find((60..100).to_a)
+
+puts "Joining Games and Users..."
+
+count = 1
+users = User.all
+100.times do
+    user_array = []
+    user_temp_game = Game.find(count)
+    temp_game_sport = user_temp_game.sport_id
+    users.each do |user|
+        if user.sports.ids.include? temp_game_sport
+            user_array.push(user)
+        end
+    end
+    
+    
+    user_count = rand(1..4)
+
+    game_users = []
+
+    user_count.times do
+    game_users.push(user_array.slice!(rand(0..(user_array.count - 1))))
+    end
+
+    user_temp_game.users = game_users
+    user_temp_game.save
+    count = count + 1
+end
 
 puts "done!"
