@@ -280,7 +280,7 @@ game5 = Game.create!({
 
 puts "Joining Games and Users..."
 
-game1.user_ids = User.first.id, (User.first.id + 1), (User.first.id + 2)
+game1.user_ids = (User.first.id + 1), (User.first.id + 2)
 game1.save
 
 game2.user_ids = User.first.id, (User.first.id + 2), (User.first.id + 4)

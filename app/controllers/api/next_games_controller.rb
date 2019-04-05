@@ -39,7 +39,8 @@ class Api::NextGamesController < ApplicationController
             facility: g.facility.name,
             other_players: g.users.ids,
             sport: g.sport.name,
-            time: g.start_time.strftime("%I:%M %p")
+            time: g.start_time.strftime("%I:%M %p"),
+            gameId: g.id
           }
           existing_games.push(existing_game)
         end
@@ -64,8 +65,10 @@ class Api::NextGamesController < ApplicationController
           },
           dist: (Geocoder::Calculations.distance_between([@current_location[:location][:lat], @current_location[:location][:lng]], [f.latitude.to_f, f.longitude.to_f]) * 1.60934).round(2),
           facility: f.name,
+          facilityId: f.id,
           other_players: [],
           sport: sport.name,
+          sportId: sport.id,
           time: "USER PREF HERE"
         }
         empty_games[sport.name].push(new_game)
