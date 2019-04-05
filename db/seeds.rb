@@ -63,7 +63,7 @@ basketball = Sport.create!({
 })
 
 frisbee = Sport.create!({
-    name: "Frisbee",
+    name: "Ultimate-frisbee",
     image: 'https://github.com/MattccTO/next-game-rails-api/blob/master/db/assets/sport-image/pickupFrisbee.jpeg?raw=true'
 })
 
@@ -168,7 +168,7 @@ puts "Re-creating User Time Preferences..."
 
 Timepref.destroy_all
 
-days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
 User.all.each do |u|
     days.each do |d|
@@ -179,37 +179,37 @@ User.all.each do |u|
     end
 end
 
-timepref1 = user1.timeprefs.find_by(week_day: 'Monday')
+timepref1 = user1.timeprefs.find_by(week_day: 'monday')
 timepref1.start_time = '10:00'
 timepref1.end_time = '20:00'
 timepref1.active = true
 timepref1.save
 
-timepref2 = user1.timeprefs.find_by(week_day: 'Wednesday')
+timepref2 = user1.timeprefs.find_by(week_day: 'wednesday')
 timepref2.start_time = '8:00'
 timepref2.end_time = '10:00'
 timepref2.active = true
 timepref2.save
 
-timepref3 = user1.timeprefs.find_by(week_day: 'Sunday')
+timepref3 = user1.timeprefs.find_by(week_day: 'sunday')
 timepref3.start_time = '9:00'
 timepref3.end_time = '16:00'
 timepref3.active = true
 timepref3.save
 
-timepref4 = user3.timeprefs.find_by(week_day: 'Tuesday')
+timepref4 = user3.timeprefs.find_by(week_day: 'tuesday')
 timepref4.start_time = '10:00'
 timepref4.end_time = '20:00'
 timepref4.active = true
 timepref4.save
 
-timepref5 = user3.timeprefs.find_by(week_day: 'Thursday')
+timepref5 = user3.timeprefs.find_by(week_day: 'thursday')
 timepref5.start_time = '12:00'
 timepref5.end_time = '16:00'
 timepref5.active = true
 timepref5.save
 
-timepref6 = user3.timeprefs.find_by(week_day: 'Saturday')
+timepref6 = user3.timeprefs.find_by(week_day: 'saturday')
 timepref6.start_time = '9:00'
 timepref6.end_time = '20:00'
 timepref6.active = true
