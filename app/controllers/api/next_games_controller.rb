@@ -136,7 +136,6 @@ class Api::NextGamesController < ApplicationController
   end
 
   def get_new_game_time()
-    byebug
     if @timeprefs.count < 1
       new_time = Time.now + 3600
       new_time -= (new_time.sec + new_time.min % 30 * 60)
