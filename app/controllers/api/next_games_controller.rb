@@ -144,7 +144,7 @@ class Api::NextGamesController < ApplicationController
         new_time += 1800
       end
       new_game_time = {
-        date: Date.now.strftime("%A %d of %B %Y"),
+        date: Date.today.strftime("%A %d of %B %Y"),
         time: new_time.strftime("%H:%M")
       }
     else
