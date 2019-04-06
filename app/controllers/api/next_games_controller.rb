@@ -2,7 +2,6 @@ require 'geocoder'
 
 class Api::NextGamesController < ApplicationController
 
-  # Methods not complete
   def index
     @user = User.find(current_user.id)
     @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
@@ -15,7 +14,7 @@ class Api::NextGamesController < ApplicationController
 
     next_games = existing_games.concat new_games
     apply_game_weight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
-    next_games = next_games.slice(0, 5)
+    next_games = next_games.slice(0, 10)
     render json: next_games, status: 200
   end
 
@@ -39,7 +38,7 @@ class Api::NextGamesController < ApplicationController
             facility: g.facility.name,
             other_players: g.users.ids,
             sport: g.sport.name,
-            time: g.start_time.strftime("%I:%M %p"),
+            time: g.start_time.strftime("%H:%M"),
             gameId: g.id
           }
           existing_games.push(existing_game)
@@ -55,9 +54,10 @@ class Api::NextGamesController < ApplicationController
       empty_games[sport.name] = []
       facilities = sport.facilities
       facilities.each do |f|
+        new_date = get_new_game_time()
         new_game = {
           type: 'new',
-          date: 'USER PREF HERE',
+          date: new_date[:date],
           image: sport.image,
           location: {
             lat: f.latitude.to_f,
@@ -69,7 +69,7 @@ class Api::NextGamesController < ApplicationController
           other_players: [],
           sport: sport.name,
           sportId: sport.id,
-          time: "USER PREF HERE"
+          time: new_date[:time]
         }
         empty_games[sport.name].push(new_game)
       end
@@ -131,7 +131,41 @@ class Api::NextGamesController < ApplicationController
 
   def epoch_time(date, time)
     seconds = date.strftime("%s").to_i
-    seconds += time.strftime("%H").to_i
-    seconds += time.strftime("%M").to_i
+    seconds += time.strftime("%H").to_i * 3600
+    seconds += time.strftime("%M").to_i * 60
+  end
+
+  def get_new_game_time()
+    if @timeprefs.count < 1
+      new_time = Time.now + 3600
+      new_time -= (new_time.sec + new_time.min % 30 * 60)
+      if (new_time.strftime("%s") - Time.now.strftime("%S")) < 3600
+        new_time += 1800
+      end
+      new_game_time = {
+        date: Date.now.strftime("%A %d of %B %Y"),
+        time: new_time.strftime("%H:%M")
+      }
+    else
+      epoch_dates = []
+      @timeprefs.each do |tp|
+        epoch_stamp = {
+          tp_id: tp.id,
+          seconds: epoch_time(Date.parse(tp.week_day), tp.start_time)
+        }
+        epoch_dates.push(epoch_stamp)
+      end
+      epoch_dates.sort! { |x,y| x[:seconds] <=> y[:seconds] }
+      epoch_dates.count.times do
+        if epoch_dates[0][:seconds] < Time.now.strftime("%s").to_i
+          epoch_dates[0][:seconds] += 604800
+          epoch_dates.push(epoch_dates.delete(epoch_dates[0]))
+        end
+      end
+      new_game_time = {
+        date: Time.at(epoch_dates[0][:seconds]).to_datetime.strftime("%A %d of %B %Y"),
+        time: (@timeprefs.select { |d| d[:id] == epoch_dates[0][:tp_id] })[0][:start_time].strftime("%H:%M")
+      }
+    end
   end
 end
