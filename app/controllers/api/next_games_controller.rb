@@ -3,8 +3,7 @@ require 'geocoder'
 class Api::NextGamesController < ApplicationController
 
   def index
-    # @user = User.find(current_user.id)
-    @user = User.first
+    @user = User.find(current_user.id)
     @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
     @sports = @user.sports
     @timeprefs = @user.timeprefs.where(active: true)
@@ -15,7 +14,7 @@ class Api::NextGamesController < ApplicationController
 
     next_games = existing_games.concat new_games
     apply_game_weight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
-    next_games = next_games.slice(0, 50)
+    next_games = next_games.slice(0, 10)
     render json: next_games, status: 200
   end
 
@@ -39,7 +38,7 @@ class Api::NextGamesController < ApplicationController
             facility: g.facility.name,
             other_players: g.users.ids,
             sport: g.sport.name,
-            time: g.start_time.strftime("%H:%M %p"),
+            time: g.start_time.strftime("%H:%M"),
             gameId: g.id
           }
           existing_games.push(existing_game)
@@ -145,7 +144,7 @@ class Api::NextGamesController < ApplicationController
       end
       new_game_time = {
         date: Date.now.strftime("%A %d of %B %Y"),
-        time: new_time.strftime("%H:%M %p")
+        time: new_time.strftime("%H:%M")
       }
     else
       epoch_dates = []
@@ -165,7 +164,7 @@ class Api::NextGamesController < ApplicationController
       end
       new_game_time = {
         date: Time.at(epoch_dates[0][:seconds]).to_datetime.strftime("%A %d of %B %Y"),
-        time: (@timeprefs.select { |d| d[:id] == epoch_dates[0][:tp_id] })[0][:start_time].strftime("%H:%M %p")
+        time: (@timeprefs.select { |d| d[:id] == epoch_dates[0][:tp_id] })[0][:start_time].strftime("%H:%M")
       }
     end
   end
