@@ -7,7 +7,7 @@ class Api::NextGamesController < ApplicationController
     @user = User.find(current_user.id)
     @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
     @sports = @user.sports
-    @timeprefs = @user.timeprefs
+    @timeprefs = @user.timeprefs.where(active: true)
 
     existing_games = find_existing_games()
 
@@ -46,7 +46,7 @@ class Api::NextGamesController < ApplicationController
         end
       end
     end
-    existing_games
+    remove_owned_games(existing_games)
   end
 
   def find_new_games()
@@ -103,15 +103,35 @@ class Api::NextGamesController < ApplicationController
 
   def validate_by_time_prefs(game)
     is_valid_date_time = false
-    if @timeprefs.count == 0
-      is_valid_date_time = true
-    else
-      @timeprefs.each do |tp|
-        if ((tp.week_day == game.date.strftime("%A")) && ((tp.start_time..tp.end_time).cover? game.start_time))
-          is_valid_date_time = true
+    date_time = epoch_time(game.date, game.start_time)
+    if (date_time - Time.now.strftime("%s").to_i) > -3600
+      if @timeprefs.count == 0
+        is_valid_date_time = true
+      else
+        @timeprefs.each do |tp|
+          if ((tp.week_day == (game.date.strftime("%A")).downcase) && ((tp.start_time..tp.end_time).cover? game.start_time))
+            is_valid_date_time = true
+          end
         end
       end
     end
     is_valid_date_time
+  end
+
+  def remove_owned_games(games)
+    owned_games = @user.games.ids
+    owned_games.each do |i|
+      game_index = games.index { |g| g[:gameId] == i }
+      if game_index
+        games.slice!(game_index)
+      end
+    end
+    games
+  end
+
+  def epoch_time(date, time)
+    seconds = date.strftime("%s").to_i
+    seconds += time.strftime("%H").to_i
+    seconds += time.strftime("%M").to_i
   end
 end
