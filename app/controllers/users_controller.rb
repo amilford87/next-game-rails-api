@@ -9,6 +9,10 @@ class UsersController < ApplicationController
     if user.save
       session[:user_id] = user.id
       puts "SAVED SETTING SESSION"
+      params[:sports].each do |as|
+        sport_pointer = Sport.find_by(name: as)
+        sport_pointer.users << user
+      end
       render :json => user, status: 200
     else
       puts "NOT SAVED"
