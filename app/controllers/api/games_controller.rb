@@ -45,12 +45,17 @@ class Api::GamesController < ApplicationController
   def create
   
     if params[:type] == "new" 
+      array = params[:date].split(' ')
+      db_date = "#{array[4]}-#{Date::MONTHNAMES.index(array[3])}-#{array[1]}"
+
       game = Game.create!({
-        date: params[:date],
+        date: db_date,
         start_time: params[:start_time],
         facility_id: params[:facility_id],
         sport_id: params[:sport_id]
       })
+      user = User.find(current_user.id)
+      game.users.push(user)
     else
       game = Game.find(params[:game_id])
       user = User.find(current_user.id)
