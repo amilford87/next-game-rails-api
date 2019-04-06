@@ -61,11 +61,15 @@ class Api::GamesController < ApplicationController
   end
 
   def destroy
-    if user = :current_user
+    if user = User.find(current_user.id)
       game = Game.find(game_params[:id])
-      # does this work?
-      user.game.destroy
-      json_response()
+
+      if game.users.count > 1
+        user.games.delete(game)
+        else 
+          game.destroy
+      end
+      render status: 201
     else
       # handle error
     end
