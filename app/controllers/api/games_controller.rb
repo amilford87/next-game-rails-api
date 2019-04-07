@@ -1,6 +1,6 @@
 class Api::GamesController < ApplicationController
-  
-  # Methods not complete
+
+  # Get users existing games
   def index
     if @user = User.find(current_user.id)
       @current_games = @user.games
@@ -25,7 +25,7 @@ class Api::GamesController < ApplicationController
                                location: {lat: @game_facility_lat.to_f, lng: @game_facility_lng.to_f},
                                id: game.id
                        }
-      @user_current_games_data.push(@users_saved_games) 
+      @user_current_games_data.push(@users_saved_games)
       end
       render json: @user_current_games_data, status: 200
     else
@@ -33,18 +33,10 @@ class Api::GamesController < ApplicationController
     end
   end
 
-  def post
-    if user = :current_user
-      user.create(game_params)
-      json_response()
-    else
-      # handle error
-    end
-  end
-
+  # Create a new game for a user or join them to an existing game
   def create
-  
-    if params[:type] == "new" 
+
+    if params[:type] == "new"
       array = params[:date].split(' ')
       db_date = "#{array[4]}-#{Date::MONTHNAMES.index(array[3])}-#{array[1]}"
 
@@ -61,17 +53,16 @@ class Api::GamesController < ApplicationController
       user = User.find(current_user.id)
       game.users.push(user)
     end
-
-
   end
 
+  # Remove a user from a game or delete the game if there are no more users
   def destroy
     if user = User.find(current_user.id)
       game = Game.find(game_params[:id])
 
       if game.users.count > 1
         user.games.delete(game)
-        else 
+        else
           game.destroy
       end
       render status: 201

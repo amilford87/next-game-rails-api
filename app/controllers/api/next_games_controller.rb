@@ -2,20 +2,27 @@ require 'geocoder'
 
 class Api::NextGamesController < ApplicationController
 
+  # Show a user possible next games
   def index
-    @user = User.find(current_user.id)
-    @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
-    @sports = @user.sports
-    @timeprefs = @user.timeprefs.where(active: true)
 
-    existing_games = find_existing_games()
+    if @user = User.find(current_user.id)
+      @user = User.find(current_user.id)
+      @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
+      @sports = @user.sports
+      @timeprefs = @user.timeprefs.where(active: true)
 
-    new_games = find_new_games()
+      existing_games = find_existing_games()
 
-    next_games = existing_games.concat new_games
-    apply_game_weight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
-    next_games = next_games.slice(0, 10)
-    render json: next_games, status: 200
+      new_games = find_new_games()
+
+      next_games = existing_games.concat new_games
+      apply_game_weight(next_games).sort! { |x,y| y[:weighted_score] <=> x[:weighted_score]}
+      next_games = next_games.slice(0, 10)
+
+      render json: next_games, status: 200
+    else
+      render json: { message: 'incorrect credentials' }, status: 401
+    end
   end
 
   private

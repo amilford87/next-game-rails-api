@@ -1,5 +1,6 @@
 class Api::PreferencesController < ApplicationController
 
+  # Show a user their preferences page
   def show
     if @user = User.find(current_user.id)
       user_sports = @user.sports
@@ -29,6 +30,7 @@ class Api::PreferencesController < ApplicationController
     end
   end
 
+  # Update user preferences
   def update
     # Check if user
     if @user = User.find(current_user.id)
@@ -58,11 +60,13 @@ class Api::PreferencesController < ApplicationController
         end
       end
 
+      # Establish time preferences to change by comparing new to old
       user_current_timeprefs = @user.timeprefs.where(active: true).pluck(:week_day)
       user_new_timeprefs = user_active_days(pref_params[:selectedDays])
       add_days = user_new_timeprefs - user_current_timeprefs
       remove_days = user_current_timeprefs - user_new_timeprefs
       stay_days = user_current_timeprefs - remove_days
+
       if add_days.count > 0
         add_days.each do |ad|
           day_pref_pointer = Timepref.where(user_id: @user.id, week_day: ad)
@@ -75,12 +79,14 @@ class Api::PreferencesController < ApplicationController
           )
         end
       end
+
       if remove_days.count > 0
         remove_days.each do |rd|
           day_pref_pointer = Timepref.where(user_id: @user.id, week_day: rd)
           day_pref_pointer.update(active: false, start_time: nil, end_time: nil)
         end
       end
+
       if stay_days.count > 0
         stay_days.each do |sd|
           day_pref_pointer = Timepref.where(user_id: @user.id, week_day: sd)
@@ -92,7 +98,10 @@ class Api::PreferencesController < ApplicationController
           )
         end
       end
+
       render status: 201
+    else
+      render json: { message: 'incorrect credentials' }, status: 401
     end
   end
 
