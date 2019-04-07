@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_and_belongs_to_many :sports
   has_many :timeprefs
 
-  validates :username, presence: true, :uniqueness => {:case_sensitive => false}
+  validates :username, presence: true#, :uniqueness => {:case_sensitive => false}
   validates :email, presence: true, :uniqueness => {:case_sensitive => false}
   validates :password, presence: true, length: { minimum: 4 }
 
