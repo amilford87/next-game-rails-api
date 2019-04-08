@@ -4,6 +4,7 @@ class Api::GamesController < ApplicationController
   def index
     if @user = User.find(current_user.id)
       @current_games = @user.games
+      @current_location = {location: {lat: params[:lat].to_f, lng: params[:lng].to_f}}
       @user_current_games_data = []
       @user.games.each do |game|
         @game_sport = game.sport.name
@@ -23,6 +24,7 @@ class Api::GamesController < ApplicationController
                                image: @game_image,
                                facility: @game_facility_name,
                                location: {lat: @game_facility_lat.to_f, lng: @game_facility_lng.to_f},
+                               dist: (Geocoder::Calculations.distance_between([@current_location[:location][:lat], @current_location[:location][:lng]], [@game_facility_lat.to_f, @game_facility_lng.to_f]) * 1.60934).round(1),
                                id: game.id
                        }
       @user_current_games_data.push(@users_saved_games)
