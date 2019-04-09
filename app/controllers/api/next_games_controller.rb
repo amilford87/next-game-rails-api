@@ -100,7 +100,7 @@ class Api::NextGamesController < ApplicationController
       distance_weight = (4.5 * Math.tanh(3.5 - (1.5 * Math.sqrt(0.9 * g[:dist]))) + 1.5)
       if g[:dist] > 15 then distance_weight = -6 end
       # Players
-      player_weight = g[:other_players].count
+      player_weight = 1.3 * g[:other_players].count
       if player_weight > 6 then player_weight = 6 end
       g[:weighted_score] = (distance_weight + player_weight).round(3)
     end
@@ -117,7 +117,7 @@ class Api::NextGamesController < ApplicationController
         @timeprefs.each do |tp|
           if ((tp.week_day == (game.date.strftime("%A")).downcase) &&
           (((tp.start_time..tp.end_time).cover? game.start_time) ||
-          (((tp.start_time - tp.end_time) > 0) && ((game.start_time - tp.start_time) > 0)))
+          (((tp.start_time - tp.end_time) > 0) && ((game.start_time - tp.start_time) > 0))))
             is_valid_date_time = true
           end
         end
