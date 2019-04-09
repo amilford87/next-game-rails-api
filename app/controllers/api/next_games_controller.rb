@@ -110,12 +110,14 @@ class Api::NextGamesController < ApplicationController
   def validate_by_time_prefs(game)
     is_valid_date_time = false
     date_time = epoch_time(game.date, game.start_time)
-    if (date_time - Time.now.strftime("%s").to_i) > -3600
+    if (date_time - Time.now.strftime("%s").to_i) > -1800
       if @timeprefs.count == 0
         is_valid_date_time = true
       else
         @timeprefs.each do |tp|
-          if ((tp.week_day == (game.date.strftime("%A")).downcase) && ((tp.start_time..tp.end_time).cover? game.start_time))
+          if ((tp.week_day == (game.date.strftime("%A")).downcase) &&
+          (((tp.start_time..tp.end_time).cover? game.start_time) ||
+          (((tp.start_time - tp.end_time) > 0) && ((game.start_time - tp.start_time) > 0)))
             is_valid_date_time = true
           end
         end
