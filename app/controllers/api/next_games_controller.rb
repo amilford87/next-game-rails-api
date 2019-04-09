@@ -98,7 +98,7 @@ class Api::NextGamesController < ApplicationController
     games.each do |g|
       # Distance
       distance_weight = (4.5 * Math.tanh(3.5 - (1.5 * Math.sqrt(0.9 * g[:dist]))) + 1.5)
-
+      if g[:dist] > 15 then distance_weight = -6 end
       # Players
       player_weight = g[:other_players].count
       if player_weight > 6 then player_weight = 6 end
