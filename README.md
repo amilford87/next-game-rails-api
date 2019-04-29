@@ -12,7 +12,7 @@ A pick-up sports game locator and match-up. When searching for an outdoor pick-u
 Download or clone.
 Start the server by running 'rails s' in the terminal.
 
-Download or clone the [front-end](https://github.com/amilford87/next-game-react-app)
+Download or clone the [front end](https://github.com/amilford87/next-game-react-app)
 
 After the server is up and running, run the front end with npm start in the terminal to launch.
 
@@ -27,3 +27,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ![Next-Game Select Game 1](https://github.com/amilford87/next-game-react-app/blob/master/assets/select-game-1.png)
 ![Next-Game Select Game 5](https://github.com/amilford87/next-game-react-app/blob/master/assets/select-game-5.png)
 ![Next-Game Saved Game](https://github.com/amilford87/next-game-react-app/blob/master/assets/saved-games.png)
+
+## Dependencies
+
+* Ruby 2.3.5
+* Rails 5.2.3
+* PostgreSQL (pg)
+* puma
+* nokogiri
+* bcrypt
+* faker
+* rack-cors
+* geocoder
